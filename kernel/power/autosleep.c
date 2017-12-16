@@ -107,7 +107,7 @@ int pm_autosleep_set_state(suspend_state_t state)
 		queue_up_suspend_work();
 	} else {
 		pm_wakep_autosleep_enabled(false);
-	}
+	}	
 
 	mutex_unlock(&autosleep_lock);
 	return 0;
